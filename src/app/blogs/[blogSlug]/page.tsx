@@ -1,9 +1,17 @@
-import { getBlog } from "@/services/blog";
+import { getBlog, getBlogs } from "@/services/blog";
 import MDXRemoteWrapper from "@/components/MDXRemoteWrapper";
 import BlogDetailHeading from "@/components/Blog/BlogDetailHeading";
 
 export interface BlogParams {
   params: { blogSlug: string };
+}
+
+export async function generateStaticParams() {
+  const blogs = await getBlogs();
+
+  return blogs.map((blog) => ({
+    blogSlug: blog.slug,
+  }));
 }
 
 const BlogDetail = async ({ params }: BlogParams) => {
