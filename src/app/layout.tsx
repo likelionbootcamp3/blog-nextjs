@@ -1,8 +1,8 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/partials/Navbar";
 import { Poppins } from "@next/font/google";
 import "@/styles/globals.css";
 import clsx from "clsx";
-import Footer from "@/components/Footer";
+import Footer from "@/components/partials/Footer";
 
 const bodyFont = Poppins({ weight: ["400", "500", "600"], subsets: ["latin"] });
 

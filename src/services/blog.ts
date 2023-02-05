@@ -17,5 +17,5 @@ export const getBlog = async (slug: string) => {
   const mdxSource = await serialize(markdownWithMeta, {
     parseFrontmatter: true,
   });
-  return { mdxSource, slug };
+  return mdxSource;
 };
