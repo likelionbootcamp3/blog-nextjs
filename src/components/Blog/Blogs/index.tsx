@@ -6,7 +6,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { getBlogs } from "@/services/blog";
 
-async function Blogs() {
+const Blogs = async () => {
   const blogs = await getBlogs();
 
   return (
@@ -41,6 +41,6 @@ async function Blogs() {
       </div>
     </section>
   );
-}
+};
 
 export default Blogs;
