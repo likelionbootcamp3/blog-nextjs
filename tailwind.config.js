@@ -10,6 +10,10 @@ module.exports = {
         body: "var(--text-color)",
         neutral: "var(--neutral-color-1)",
       },
+      height: {
+        navbar: "var(--navbar-height)",
+        "navbar-scroll": "var(--navbar-scroll-height)"
+      }
     },
   },
   plugins: [

@@ -11,6 +11,9 @@
   --neutral-color-1: #dc143c;
   --neutral-color-2: #8b008b;
   --neutral-color-3: #8fbc8f;
+
+  --navbar-height: 7rem;
+  --navbar-scroll-height: 5rem;
 }
 
 @layer base {
